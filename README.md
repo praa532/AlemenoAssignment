@@ -1,7 +1,7 @@
 # AlemenoAssignment
 
 
-Brief project description here.
+AlemenoAssignment is a web application built using the Django framework that allows users to upload images and retrieve their average RGB values. This project serves as a demonstration of image processing and data serialization within a Django-based web application.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -26,6 +26,12 @@ List the prerequisites that need to be installed or set up before following the 
 - djangorestframework
 - python-opencv
 - json
+
+ # Features
+Image Upload: Users can upload images to the application.
+RGB Analysis: The uploaded images are analyzed to extract their average RGB values.
+Data Presentation: The RGB values are presented in a user-friendly format.
+Admin Panel: An admin panel is provided for managing uploaded images and user accounts.
 
 ### Installation
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload and Process Image</title>
+</head>
+<body>
+    <h1>Upload and Process Image</h1>
+    
+    <!-- Create a form for uploading an image -->
+    <form id="imageUploadForm" action="/upload_image/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- Input for selecting an image file -->
+        <div>
+            <input type="file" name="image" accept="image/*" required>
+        </div>
+        <!-- Submit button to upload and process the image -->
+        {% comment %} <input type="submit" value="Upload"> {% endcomment %}
+        {% comment %} <div class="d-flex " > {% endcomment %}
+            <button type = "submit">SEND</button>
+    </form>
+    
+    <!-- Display the results here -->
+    {% comment %} <div id="result"></div> {% endcomment %}
+</body>
+</html>

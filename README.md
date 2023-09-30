@@ -39,56 +39,62 @@ Admin Panel: An admin panel is provided for managing uploaded images and user ac
 
    ```bash
    git clone https://github.com/yourusername/AlemenoAssignment.git
-Navigate to the Project Directory:
+2. Navigate to the Project Directory:
 
-```bash
+    ```bash
 cd your-project/
 
-# Create a Virtual Environment (Optional but Recommended):
+3. Create a Virtual Environment (Optional but Recommended):
 
 It's good practice to work within a virtual environment to isolate your project's dependencies:
 
 On Windows:
 
-```bash
+    ```bash
 python -m venv venv
 
 On macOS and Linux:
 
-```bash
+    ```bash
 python3 -m venv venv
 
-Activate the Virtual Environment:
+4. Activate the Virtual Environment:
 
 On Windows:
 
-```bash
+    ```bash
 venv\Scripts\activate
 
 On macOS and Linux:
 
-```bash
+    ```bash
 source venv/bin/activate
 
-Install Project Dependencies:
+5. Install Project Dependencies:
 
-```bash
+    ```bash
 pip install -r requirements.txt
 
-Migrate the Database:
+6. Migrate the Database:
 
-```bash
+    ```bash
 python manage.py migrate
-Create a Superuser (Admin) Account:
+7. Create a Superuser (Admin) Account:
 
-To access the admin panel and manage the application, create a superuser account:
+8. To access the admin panel and manage the application, create a superuser account:
 
-```bash
+    ```bash
 python manage.py createsuperuser
 
-# Run the Development Server:
+9.  Run the Development Server:
 
-#  Start the development server:
+10. Start the development server:
 
-```bash
+    ```bash
 python manage.py runserver
+
+# Configuration
+The project uses Django for web development. You can customize various aspects of the application, including database settings, user authentication, and more, by modifying the Django settings located in the settings.py file of the app.
+
+# Contributing
+Contributions to this project are welcome! If you'd like to contribute, please follow the guidelines outlined in the Contributing section in the README.md file.

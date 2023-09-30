@@ -26,7 +26,6 @@ List the prerequisites that need to be installed or set up before following the 
 - djangorestframework
 - python-opencv
 - json
-- 
 
 ### Installation
 
@@ -34,3 +33,56 @@ List the prerequisites that need to be installed or set up before following the 
 
    ```bash
    git clone https://github.com/yourusername/AlemenoAssignment.git
+Navigate to the Project Directory:
+
+```bash
+cd your-project/
+
+# Create a Virtual Environment (Optional but Recommended):
+
+It's good practice to work within a virtual environment to isolate your project's dependencies:
+
+On Windows:
+
+```bash
+python -m venv venv
+
+On macOS and Linux:
+
+```bash
+python3 -m venv venv
+
+Activate the Virtual Environment:
+
+On Windows:
+
+```bash
+venv\Scripts\activate
+
+On macOS and Linux:
+
+```bash
+source venv/bin/activate
+
+Install Project Dependencies:
+
+```bash
+pip install -r requirements.txt
+
+Migrate the Database:
+
+```bash
+python manage.py migrate
+Create a Superuser (Admin) Account:
+
+To access the admin panel and manage the application, create a superuser account:
+
+```bash
+python manage.py createsuperuser
+
+# Run the Development Server:
+
+#  Start the development server:
+
+```bash
+python manage.py runserver

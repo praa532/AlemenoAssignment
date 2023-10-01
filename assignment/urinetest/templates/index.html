@@ -19,6 +19,11 @@
         {% comment %} <div class="d-flex " > {% endcomment %}
             <button type = "submit">SEND</button>
     </form>
+
+        <h2>Processed Image Data:</h2>
+        <pre>
+        {{ serializer.data.processed_data|safe }}
+        </pre>
     
     <!-- Display the results here -->
     {% comment %} <div id="result"></div> {% endcomment %}

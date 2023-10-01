@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import UploadedImage
-from .serializers import UploadedImageSerializer
+from .serializers import UploadedImageSerializer, save_rgb_as_json
 import cv2
 import numpy as np
 
@@ -21,16 +21,13 @@ def upload_image(request):
         serializer.save()
         
         try:
-            # Analyze RGB values
+            # Process and save RGB data as JSON
             image_instance = serializer.instance
-            image_path = image_instance.image.path
-            image = cv2.imread(image_path)
-            rgb_values = np.mean(image, axis=(0, 1)).astype(int)
+            json_data = save_rgb_as_json(image_instance)  # Call your processing function
             
-            # Add RGB data to the serializer
-            serializer.data['rgb_data'] = {
-                'average_rgb': rgb_values.tolist(),
-            }
+            if json_data is not None:
+                serializer.instance.processed_data = json_data
+                serializer.instance.save()
             
             # Render the response, you can replace "index.html" with your desired template
             return render(request, "index.html", serializer.data)

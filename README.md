@@ -26,7 +26,6 @@ List the prerequisites that need to be installed or set up before following the 
 - djangorestframework
 - python-opencv
 - json
-- 
 
 ### Installation
 

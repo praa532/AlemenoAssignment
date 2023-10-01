@@ -11,11 +11,10 @@ AlemenoAssignment is a web application built using the Django framework that all
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
-Provide instructions for setting up and running your Django project.
+Please refer to the Installation section in the README.md file for detailed instructions on setting up and running the project locally.
 
 ### Prerequisites
 

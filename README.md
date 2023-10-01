@@ -42,7 +42,7 @@ Admin Panel: An admin panel is provided for managing uploaded images and user ac
 2. Navigate to the Project Directory:
 
     ```bash
-cd your-project/
+    cd your-project/
 
 3. Create a Virtual Environment (Optional but Recommended):
 
@@ -50,48 +50,42 @@ It's good practice to work within a virtual environment to isolate your project'
 
 On Windows:
 
-    ```bash
-python -m venv venv
+    python -m venv venV/
 
 On macOS and Linux:
 
-    ```bash
-python3 -m venv venv
+    python3 -m venv venv
 
 4. Activate the Virtual Environment:
 
 On Windows:
 
-    ```bash
-venv\Scripts\activate
+
+    venv\Scripts\activate
 
 On macOS and Linux:
 
-    ```bash
-source venv/bin/activate
+    source venv/bin/activate
 
 5. Install Project Dependencies:
 
-    ```bash
-pip install -r requirements.txt
+        pip install -r requirements.txt
 
-6. Migrate the Database:
+7. Migrate the Database:
 
-    ```bash
-python manage.py migrate
+        python manage.py migrate
 7. Create a Superuser (Admin) Account:
 
 8. To access the admin panel and manage the application, create a superuser account:
 
-    ```bash
-python manage.py createsuperuser
+
+        python manage.py createsuperuser
 
 9.  Run the Development Server:
 
 10. Start the development server:
 
-    ```bash
-python manage.py runserver
+        python manage.py runserver
 
 # Configuration
 The project uses Django for web development. You can customize various aspects of the application, including database settings, user authentication, and more, by modifying the Django settings located in the settings.py file of the app.

@@ -1,0 +1,5 @@
+Python
+Django
+djangorestframework
+python-opencv
+json

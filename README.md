@@ -41,7 +41,7 @@ Admin Panel: An admin panel is provided for managing uploaded images and user ac
 2. Navigate to the Project Directory:
 
     ```bash
-    cd your-project/
+    cd assignment
 
 3. Create a Virtual Environment (Optional but Recommended):
 
